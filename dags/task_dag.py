@@ -9,8 +9,11 @@ from datetime import datetime, timedelta
 import pandas as pd
 import re
 
+from dotenv import dotenv_values
 
-path = '/Users/khobotov/PycharmProjects/AirflowLessons/data/tiktok_google_play_reviews.csv'
+
+config = dotenv_values("../.env")
+path = config['PATH']
 
 
 def task1():
